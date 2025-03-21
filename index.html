@@ -826,53 +826,7 @@ enable_page_level_ads: true
 
 <!-- Above code is for old openInApp pop-up with open in app and continue buttons-->
 
-<div id='openInApp-modal' class='openInApp'>
-    <a href = 'https://geeksforgeeksapp.page.link/?link=https://www.geeksforgeeks.org/equation/?type%3Darticle%26id%3D1088418&apn=free.programming.programming&isi=1641848816&ibi=org.geeksforgeeks.GeeksforGeeksDev&efr=1' class='openInAppLink'>
-        <span style='color: #fff;'>Open In App</span>
-    </a>
-</div>
-    <script>
-        var consentValue = localStorage.getItem("gfg_cc");
-        var isIOS = !!navigator.platform && /iPad|iPhone|iPod|MacIntel/.test(navigator.platform) && navigator.maxTouchPoints > 0;
-        const isSafari = navigator.userAgent.indexOf("Safari") > -1;
-        const isMozilla = navigator.userAgent.indexOf("Mozilla") > -1;
-        if(consentValue){
-            if(window.innerHeight > window.innerWidth && navigator.maxTouchPoints > 1 && (isSafari || isMozilla || navigator.userAgentData.mobile)){
-                $('.openInApp').css({
-                    display: "block"
-                });
-                $('#scrollTopBtn').css({
-                    bottom: "44px"
-                });
-                //adding a new class to check stats for clicks on iOS and Android
-                isIOS ? jQuery('.openInAppLink').addClass("oia-iOS") : $('.openInAppLink').addClass("oia-android");      //for openInApp Link
-            }
-        }
-        
-    </script>
-    <style>
-        .openInApp{
-            display: none;
-            bottom: 0px;
-            width: 100%;
-            position: fixed;
-            z-index: 1025;
-            opacity: 0.93;
-        }
-        .openInAppLink{
-            height: 44px;
-            background: var(--color-gfg);
-            font-weight: bold;
-            display: block;
-            text-align: center;
-            padding: 12px;
-            font-size: large;
-        }
-        .openInAppLink, .openInAppLink:hover, .openInAppLink:active, .openInAppLink:visited, .openInAppLink:focus {
-            text-decoration:none;
-        }
-    </style>
-<!-- END Open in App Button and CSS-->
+
 <div class="container-fluid bg-light" id="home-page" style="position: relative; max-width:100%;">
     <div class="article-page_flex">
         </div>
@@ -953,9 +907,9 @@ enable_page_level_ads: true
 <p dir="ltr"><img alt="Equation-in-Maths" height="470" src="https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths.webp" srcset="https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths.webp 1000w,https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths-100.webp 100w,https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths-200.webp 200w,https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths-300.webp 300w,https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths-660.webp 660w,https://media.geeksforgeeks.org/wp-content/uploads/20231102093059/Equation-in-Maths-768.webp 768w" width="1000"/></p>
 <div id="table_of_content"><p class="tocHeading"><strong>Содержание</strong></p><ul><li key="0"><a href="#what-is-an-equation">Что такое уравнение?</a></li><li key="1"><a href="#types-of-equations">Типы уравнений</a></li><li key="4"><a href="#systems-of-equations">Системы уравнений</a></li><li key="5"><a href="#how-to-solve-systems-of-equations">Как решать системы уравнений?</a></li><li key="6"><a href="#solving-equations">Решение уравнений</a></li><li key="7"><a href="#algebraic-equation">Алгебраические уравнения</a></li></ul></div>
 <h2 id="what-is-an-equation"><span>Что такое уравнение?</span></h2>
-<p dir="ltr"><span>Уравнение — это математическое утверждение, которое показывает равенство двух выражений. Уравнение содержит переменные, числа, математические символы и операции. Уравнение состоит из двух частей, разделенных знаком равенства (=), где левая часть называется <b>LHS</b>, а правая — <b>RHS</b>. Уравнение показывает, что LHS равно RHS.</span></p>
+<p dir="ltr"><span>Уравнение — это математическое утверждение, которое показывает равенство двух выражений. Уравнение содержит переменные, числа, математические символы и операции. Уравнение состоит из двух частей, разделенных знаком равенства (=). Уравнение показывает, что левая чать равна правой.</span></p>
 <h3><span>Определение уравнения</span></h3>
-<blockquote><p dir="ltr"><span>Уравнение можно определить как <b>«математическое предложение, которое показывает, что два выражения равны»</b>. Например, уравнение 2(x + y) = 2x + 2y показывает, что LHS (2(x + y)) равно RHS (2x + 2y).</span></p></blockquote>
+<blockquote><p dir="ltr"><span>Уравнение можно определить как <b>«математическое предложение, которое показывает, что два выражения равны»</b>. Например, уравнение 2(x + y) = 2x + 2y показывает, что левая чать (2(x + y)) равна правой части (2x + 2y).</span></p></blockquote>
 <h3><span>Степень уравнения</span></h3>
 <p dir="ltr"><span>Степень уравнения — это наивысшая степень переменной в уравнении. Она определяет сложность уравнения и форму его графика.</span></p>
 <ul>
